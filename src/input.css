@@ -12,3 +12,15 @@
 .font-bubblegum {
     font-family: 'Bubblegum Sans', sans-serif;
 }
+
+.tabs_wrap ul li.active,
+.tabs_wrap ul li:hover {
+    @apply bg-yellow-300 text-black font-medium;
+}
+.tabs_wrap{
+    @apply cursor-pointer
+}
+
+.card__title{
+    @apply font-oswald text-3xl pb-2 font-extrabold
+}
