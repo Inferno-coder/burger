@@ -16,6 +16,10 @@ navLink.forEach(element => {
 });
 
 const tabs=document.querySelectorAll('.tabs_wrap ul li')
+const all=document.querySelectorAll('.item_wrap')
+const food=document.querySelectorAll('.food')
+const snacks=document.querySelectorAll('.snacks')
+const beverage=document.querySelectorAll('.beverage')
 
 tabs.forEach(tab=>{
     tab.addEventListener("click",()=>{
@@ -23,6 +27,32 @@ tabs.forEach(tab=>{
             tab.classList.remove('active')
         })
         tab.classList.add('active')
+        const tabVals=tab.getAttribute('data-tabs');
+        console.log(tabVals);
+        all.forEach(item=>{
+            item.style.display='none'
+        })
+        if(tabVals=='food'){
+            console.log('yes food');
+            food.forEach(item=>{
+                item.style.display='block'
+            })
+        }
+        else if(tabVals=='snacks'){
+            snacks.forEach(item=>{
+                item.style.display='block'
+            })
+        }
+        else if(tabVals=='beverage'){
+            beverage.forEach(item=>{
+                item.style.display='block'
+            })
+        }
+        else if(tabVals=='all'){
+            all.forEach(item=>{
+                item.style.display='block'
+            })
+        }
     })
 })
 

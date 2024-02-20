@@ -147,17 +147,27 @@
       <div class="tabs_wrap">
      <ul class="flex md:flex-col p-3 my-4 md:my-5">
     <div class="flex md:flex  w-full  justify-evenly items-center"> 
-      <li class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl  text-center active">All</li>
-      <li class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl  text-center">Food</li>
-      <li class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl text-center">Snacks</li>
-      <li class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl text-center">Beverage</li>
+      <li data-tabs="all" class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl  text-center active">All</li>
+      <li data-tabs="food" class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl  text-center">Food</li>
+      <li data-tabs="snacks" class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl text-center">Snacks</li>
+      <li data-tabs="beverage"class="p-3 font-medium  border-red-400 border bg-blue-900 text-1xl md:text-3xl rounded-2xl text-center">Beverage</li>
     </div>
      </ul>
     </div>
     </div>
     <ul class="p-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
       <!-- food -->
-        <li class="my-3 md:my-10 md:mx-2 ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap food hover:bg-gray-700">
+    <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 ease-linear duration-200 rounded-3xl">
+        <img class="px-3" height="250" width="250" src="./assest/b1-removebg-preview.png" alt="">
+        <div class="card__title">Regular Beef Burger</div>
+        <p class="text-center text-1xl px-10 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid.</p>
+        <p class="text-yellow-300 text-3xl my-3 font-medium">$40</p>
+    </div>
+</li>
+
+
+        <li class="my-3 md:my-10 md:mx-2 item_wrap food">
           <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/b1-removebg-preview.png" alt="">
             <div class="card__title">Regular Beef Burger</div>
@@ -166,7 +176,7 @@
           </div>
         </li> 
 
-        <li class="my-3 md:my-10 md:mx-2 ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap food">
           <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/b1-removebg-preview.png" alt="">
             <div class="card__title">Regular Beef Burger</div>
@@ -175,16 +185,7 @@
           </div>
         </li> 
 
-        <li class="my-3 md:my-10 md:mx-2 ">
-          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
-            <img class="px-3 " height="250" width="250" src="./assest/b1-removebg-preview.png" alt="">
-            <div class="card__title">Regular Beef Burger</div>
-            <p class="text-center text-1xl px-10 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid.</p>
-            <p class="text-yellow-300 text-3xl my-3 font-medium">$40</p>
-          </div>
-        </li> 
-
-        <li class="my-3 md:my-10 md:mx-2 ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap food">
           <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/b1-removebg-preview.png" alt="">
             <div class="card__title">Regular Beef Burger</div>
@@ -195,8 +196,8 @@
         
         <!-- Snacks -->
 
-        <li class="my-3 md:my-10 md:mx-2 ">
-          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap snacks">
+          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-red-600 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/s1.png" alt="">
             <div class="card__title">Regular Beef Burger</div>
             <p class="text-center text-1xl px-10 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid.</p>
@@ -204,8 +205,8 @@
           </div>
         </li> 
  
-        <li class="my-3 md:my-10 md:mx-2 ">
-          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap snacks">
+          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-red-600 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/s1.png" alt="">
             <div class="card__title">Regular Beef Burger</div>
             <p class="text-center text-1xl px-10 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid.</p>
@@ -213,8 +214,8 @@
           </div>
         </li> 
 
-        <li class="my-3 md:my-10 md:mx-2 ">
-          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap snacks">
+          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-red-600 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/s1.png" alt="">
             <div class="card__title">Regular Beef Burger</div>
             <p class="text-center text-1xl px-10 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid.</p>
@@ -222,8 +223,8 @@
           </div>
         </li> 
 
-        <li class="my-3 md:my-10 md:mx-2 ">
-          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap snacks">
+          <div class="grid p-1 h-50 place-items-center cursor-pointer bg-red-600 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/s1.png" alt="">
             <div class="card__title">Regular Beef Burger</div>
             <p class="text-center text-1xl px-10 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid.</p>
@@ -233,7 +234,7 @@
 
         <!-- Beverage -->
 
-        <li class="my-3 md:my-10 md:mx-2 ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap beverage">
           <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/bv.png" alt="">
             <div class="card__title">Cool Drink</div>
@@ -242,7 +243,7 @@
           </div>
         </li> 
 
-        <li class="my-3 md:my-10 md:mx-2 ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap beverage">
           <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/bv.png" alt="">
             <div class="card__title">Cool Drink</div>
@@ -251,7 +252,7 @@
           </div>
         </li> 
 
-        <li class="my-3 md:my-10 md:mx-2 ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap beverage">
           <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/bv.png" alt="">
             <div class="card__title">Cool Drink</div>
@@ -260,7 +261,7 @@
           </div>
         </li> 
 
-        <li class="my-3 md:my-10 md:mx-2 ">
+        <li class="my-3 md:my-10 md:mx-2 item_wrap beverage">
           <div class="grid p-1 h-50 place-items-center cursor-pointer bg-blue-800 hover:bg-yellow-400 ease-linear  duration-200 rounded-3xl ">
             <img class="px-3 " height="250" width="250" src="./assest/bv.png" alt="">
             <div class="card__title">Cool Drink</div>
