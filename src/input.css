@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Oswald:wght@200..700&family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-white bg-blue-950;
+    }
+}
+.font-bubblegum {
+    font-family: 'Bubblegum Sans', sans-serif;
+}
